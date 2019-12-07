@@ -1,6 +1,8 @@
 # A new sample-based algorithm to compute the total sensitivity index
 This repository contains the Python code implemented to i) compare the Glen&Isaacs estimator (2012) against the Saltenis estimator (Saltelli 2010); ii) the Saltenis estimator and the Lamboni estimator (2018); iii) the algorithm to improve the performance of the Saltenis estimator that tunes the number of runs to the value of the index assessed.
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Confareneoclassico/New_estimator_algorithm/master)
+
 ## References
 [Glen G., Isaacs, K., 2012, Estimating Sobol’ sensitivity indices using correlations, Environmental Modelling and Software 37, 157-166.](https://www.sciencedirect.com/science/article/pii/S1364815212001065?via%3Dihub)
 
