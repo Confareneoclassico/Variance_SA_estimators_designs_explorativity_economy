@@ -3,7 +3,10 @@ import pandas as pd
 
 k = 6
 
-a2 = np.array([0,0.5,3,9,99,99])
+o = 6
+
+a2 = np.array([0.,0.5,3,9,99,99])
+a3 = np.array([1.,2.,4.,8.,16.,32.])
 b3 = np.array([6.42,6.42,6.42,6.42,6.42,6.42])
 
 def A1(sm):
@@ -12,8 +15,8 @@ def A1(sm):
 def A2(sm):
     return pd.Series([(np.abs(4*sm[j]-2)+a2[j])/(1+a2[j]) for j in range(k)]).product()
 
-def A2b(sm,sn):
-    return pd.Series([(np.abs(4*(sm[j]+sn[j]-np.modf(sm[j]+sn[j])[1])-2)+a2[j])/(1+a2[j]) for j in range(k)]).product()
+def A3(sm):
+    return pd.Series([(np.abs(4*sm[j]-2)+a3[j])/(1+a3[j]) for j in range(k)]).product()
 
 def B1(sm):
     return pd.Series([(k-sm[j])/(k-0.5) for j in range(k)]).product()
@@ -29,4 +32,3 @@ def C1(sm):
         
 def C2(sm):
     return sm.product(axis=1)*2**k
-
