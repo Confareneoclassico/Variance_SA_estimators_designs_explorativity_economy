@@ -1,0 +1,7 @@
+pandas==0.24.2
+numpy==1.16.2
+matplotlib==3.0.3
+sobol_seq==0.1.2
+tabulate==0.8.3
+xlrd==1.1.0
+XlsxWriter==1.0.2
